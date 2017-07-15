@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<!-- Post Loop -->
+<ul class="post-loop">
+{% for p in site.posts %}
+  <li class="item">
+      <div class="item-head">
+        <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+        <span>{{ p.date | date_to_string }}</span> &blacksquare;
+        <span class="tags">
+          {{ p | tags }}
+        </span>
+        <span>@{{ p.author }}</span>
+      </div>
+      <p>{{ p.excerpt | truncatewords: 20 }}</p>
+  </li>
+{% endfor %}
+</ul>

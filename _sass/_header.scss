@@ -1,0 +1,36 @@
+header {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: $break) {
+    justify-content: flex-start;
+    ul {
+      margin: 0 0 0 10px;
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-right: 50px;
+    @media screen and (max-width: 400px) {
+      margin-left: 40px;
+      margin-top: 5px;
+    }
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+.title {
+  margin: auto;
+  margin-left: 50px;
+  a {
+    text-decoration: none;
+    color: $base;
+  }
+}

@@ -1,0 +1,56 @@
+title: Fundamental
+author:
+  name: Theo Messenger-Jones
+  github: theomjones
+  twitter: theomjones
+
+description: Fundamental is a lightweight Jekyll theme.
+
+# Build settings
+markdown: kramdown
+theme: fundamental
+
+# Breadcrumbs
+breadcrumbs: true
+
+#Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-tagging
+
+# Compress Sass for production.
+sass:
+  style: compressed
+
+# Specifying front matter defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      layout: "post"
+      author: "Theo"
+
+#######
+#PLUGIN CONFIG
+#######
+
+# Archives
+jekyll-archives:
+  enabled:
+  - year
+  - month
+  - tags
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+# Jekyll Tagging
+tag_page_layout: tag_page
+tag_page_dir: tag

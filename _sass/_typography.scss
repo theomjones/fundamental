@@ -1,0 +1,95 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 30px 0 50px 0;
+  color: $accent;
+  @media screen and (max-width: $break) {
+    font-size: 3rem;
+    margin-top: 5px;
+  }
+}
+h2 {
+  font-size: 3rem;
+  margin: 10px 0;
+  @media screen and (max-width: $break) {
+    font-size: 2.5rem;
+  }
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.9;
+  margin: 25px 0;
+  @media screen and (max-width: $break) {
+    margin: 15px 0;
+  }
+}
+
+a {
+  color: $accent;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+blockquote {
+  font-size: 2rem;
+  opacity: .8;
+  padding: 5px 30px;
+  border-left: 4px solid rgba($tertiary, .6);
+  margin: 3rem 0;
+  background: rgba($tertiary, .1);
+}
+
+figure {
+  overflow-x: scroll;
+  background: lighten($accent, 35%);
+  padding: 10px 10px 0 10px;
+  border-radius: 3px;
+}
+
+
+ol, ul {
+  padding-left: 25px;
+  li {
+    list-style-position: outside;
+    margin: 8px 0;
+    display: list-item;
+  }
+}
+
+ol {
+  li {
+    list-style: decimal;
+    list-style-position: outside;
+  }
+}
+
+ul {
+  li {
+    list-style: disc;
+    list-style-position: outside;
+  }
+}
+
+code {
+  background: lighten($accent, 30%);
+  padding: 0;
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-07-16T00:30:54+01:00</updated><id>http://localhost:4000/</id><title type="html">Fundamental</title><subtitle>Fundamental is a lightweight Jekyll theme.</subtitle><author><name>Theo Messenger-Jones</name></author><entry><title type="html">Welcome To Fundamental</title><link href="http://localhost:4000/2017/07/15/welcome-to-fundamental.html" rel="alternate" type="text/html" title="Welcome To Fundamental" /><published>2017-07-15T19:54:53+01:00</published><updated>2017-07-15T19:54:53+01:00</updated><id>http://localhost:4000/2017/07/15/welcome-to-fundamental</id><content type="html" xml:base="http://localhost:4000/2017/07/15/welcome-to-fundamental.html">&lt;p&gt;Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.&lt;/p&gt;
+
+&lt;p&gt;This theme uses these plugins, make sure you run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; and update them to make use of all the features:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/pattex/jekyll-tagging&quot;&gt;jekyll-tagging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll-feed&quot;&gt;jekyll-feed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll-archives&quot;&gt;jekyll-archives&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Fundamental implements it’s own breadcrumb solution. It is toggleable in the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; file by setting &lt;code class=&quot;highlighter-rouge&quot;&gt;breadcrumbs&lt;/code&gt; to either &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;components&quot;&gt;Components&lt;/h3&gt;
+
+&lt;h5 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘This is a blockquote, revel in it’s beauty.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
+
+&lt;h4 id=&quot;syntax-highlighting&quot;&gt;Syntax Highlighting&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Let's write some code.&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;', How are you?'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;david&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'David'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;table-time&quot;&gt;Table Time&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Boring&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;body-content&quot;&gt;Body Content&lt;/h4&gt;
+
+&lt;p&gt;Nullam quis &lt;a href=&quot;https://www.google.co.uk&quot;&gt;risus&lt;/a&gt; eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et &lt;del&gt;magnis&lt;/del&gt; dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, &lt;strong&gt;nisi erat&lt;/strong&gt; porttitor ligula, &lt;em&gt;eget&lt;/em&gt; lacinia odio sem nec elit. Curabitur blandit tempus &lt;mark&gt;porttitor&lt;/mark&gt;. Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+
+&lt;h4 id=&quot;lists&quot;&gt;Lists&lt;/h4&gt;
+
+&lt;h6 id=&quot;ordered&quot;&gt;Ordered&lt;/h6&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ordered lists&lt;/li&gt;
+  &lt;li&gt;Not many people know why I was picked for Schindler’s List
+    &lt;ol&gt;
+      &lt;li&gt;Sub lists&lt;/li&gt;
+      &lt;li&gt;It was because I like lists.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h6 id=&quot;unordered&quot;&gt;Unordered&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;Unordered&lt;/li&gt;
+  &lt;li&gt;Lists are good. They help you get stuff done.
+    &lt;ul&gt;
+      &lt;li&gt;Sub lists&lt;/li&gt;
+      &lt;li&gt;I like lists. They’re easier than tables.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Another item in the list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
+&lt;p&gt;(Of Nicholas Cage)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://placecage.com/200/300&quot; alt=&quot;Cage&quot; /&gt;
+&lt;img src=&quot;http://placecage.com/500/200&quot; alt=&quot;Cage&quot; /&gt;
+&lt;img src=&quot;http://placecage.com/600/300&quot; alt=&quot;Cage&quot; /&gt;
+&lt;img src=&quot;http://placecage.com/800/500&quot; alt=&quot;Cage&quot; /&gt;&lt;/p&gt;</content><author><name>Theo</name></author><category term="Fundamental" /><category term="Jekyll" /><summary type="html">Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.</summary></entry><entry><title type="html">Sem Cursus Bibendum</title><link href="http://localhost:4000/2017/07/10/sem-cursus-bibendum.html" rel="alternate" type="text/html" title="Sem Cursus Bibendum" /><published>2017-07-10T00:09:45+01:00</published><updated>2017-07-10T00:09:45+01:00</updated><id>http://localhost:4000/2017/07/10/sem-cursus-bibendum</id><content type="html" xml:base="http://localhost:4000/2017/07/10/sem-cursus-bibendum.html">&lt;p&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;bibendum-venenatis-mattis&quot;&gt;Bibendum Venenatis Mattis&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p&gt;
+
+&lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+&lt;h4 id=&quot;ornare-porta-bibendum-pellentesque&quot;&gt;Ornare Porta Bibendum Pellentesque&lt;/h4&gt;
+
+&lt;p&gt;Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;</content><author><name>Theo</name></author><category term="Fundamental" /><category term="Jekyll" /><summary type="html">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.</summary></entry><entry><title type="html">Cursus Dapibus Nullam Euismod Nibh</title><link href="http://localhost:4000/2017/07/09/cursus-dapibus-nullam-euismod-nibh.html" rel="alternate" type="text/html" title="Cursus Dapibus Nullam Euismod Nibh" /><published>2017-07-09T00:09:45+01:00</published><updated>2017-07-09T00:09:45+01:00</updated><id>http://localhost:4000/2017/07/09/cursus-dapibus-nullam-euismod-nibh</id><content type="html" xml:base="http://localhost:4000/2017/07/09/cursus-dapibus-nullam-euismod-nibh.html">&lt;p&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;bibendum-venenatis-mattis&quot;&gt;Bibendum Venenatis Mattis&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p&gt;
+
+&lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+&lt;h4 id=&quot;sollicitudin-vehicula&quot;&gt;Sollicitudin Vehicula&lt;/h4&gt;
+
+&lt;p&gt;Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;</content><author><name>Theo</name></author><category term="Fundamental" /><category term="Jekyll" /><summary type="html">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.</summary></entry><entry><title type="html">Tellus</title><link href="http://localhost:4000/2017/07/07/tellus.html" rel="alternate" type="text/html" title="Tellus" /><published>2017-07-07T00:09:45+01:00</published><updated>2017-07-07T00:09:45+01:00</updated><id>http://localhost:4000/2017/07/07/tellus</id><content type="html" xml:base="http://localhost:4000/2017/07/07/tellus.html">&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
+
+&lt;h3 id=&quot;sollicitudin-vehicula&quot;&gt;Sollicitudin Vehicula&lt;/h3&gt;
+
+&lt;p&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;sollicitudin-purus&quot;&gt;Sollicitudin Purus&lt;/h5&gt;
+
+&lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;</content><author><name>Theo</name></author><summary type="html">Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</summary></entry></feed>
