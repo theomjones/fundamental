@@ -43,7 +43,18 @@ Or install it yourself as:
 
 ### Getting Started
 
-After installing you should have a `config.yml` file in your base directory. If not, [grab the default one from the repository](https://github.com/theomjones/fundamental/blob/master/_config.yml).
+After installing you should have a `config.yml` file in your base directory. Copy the contents of the repo [config.yml](https://github.com/theomjones/fundamental/blob/master/_config.yml) into your own config file. This will supply you with all the required configurations. You can edit them from here.
+
+Jekyll gives you an `index.md` file as your homepage. Copy this into it to get started, the front matter will be explained below:  **!! Something to note**, Fundamental does not currently support categories (they're coming!). The default page Jekyll produces will break breadcrumbs (for now).
+
+	---
+	layout: blog
+	title: Home
+	menu: true
+	order: 1
+	---
+	
+If you want to add the 'Archive' file you see in the demo. Create an `/archive` directory in your base directory. Then create an `index.md` inside it. Ensure it has the `layout: site-archive`. This layout displays all the posts in the site.
 
 ##### Plugins
 Fundamemtal uses these plugins. When you have installed the Fundamental gem, run `bundle install` to install the required plugins. They can be turned on and off in your configuration file.
@@ -72,7 +83,7 @@ enabled:
 ```
 
 #### Layouts
-For blog posts use the `post.html` layout (this is already set as default via config file.) For normal pages use the `page.html` layout. Naturally, the blog layout is used for the blog page on the home screen. All of these layouts inherit from the `default` layout.
+For blog posts use the `post.html` layout (this is already set as default via config file.) For normal pages use the `page.html` layout. Naturally, the blog layout is used for the blog page on the home screen. All of these layouts inherit from the `default` layout, which contains the head and footer includes.
 
 The other layouts are for the `jekyll-archives` plugin.
 
@@ -85,6 +96,7 @@ The other layouts are for the `jekyll-archives` plugin.
 	│   ├── month.html
 	│   ├── page.html
 	│   ├── post.html
+	|   ├── site-archive.html
 	│   └── tag_page.html
 		
 	
@@ -156,3 +168,4 @@ The theme is available as open source under the terms of the [MIT License](https
 
 ### 404 Page
 ![alt text](http://theomjones.com/fundamental/assets/images/screenshot3.png)
+[You can get this 404 page from the repo to use in your site.](https://github.com/theomjones/fundamental/blob/master/404.html) Just copy it into your main directory.

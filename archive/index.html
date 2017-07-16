@@ -1,15 +1,6 @@
 ---
-layout: page
+layout: site-archive
 title: Archive
 menu: true
 order: 3
 ---
-
-<h1>All Posts</h1>
-<ul>
-  {% for post in site.posts %}
-    <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-      <span> - {{ post.date | date_to_string }}</span>
-    </li>
-  {% endfor %}
-</ul>
