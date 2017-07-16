@@ -57,16 +57,28 @@ Sass is split into logical sections. The `main.scss` file is in `/assets/`.
 `syntax.scss` is optional (well, all the files are!), it just styles Jekyll highlighted code blocks using Github's highlight styles.
 
 ###### Sass Folder Structure
-      ├── _blog.scss
-      ├── _footer.scss
-      ├── _fundamentals.scss
-      ├── _globals.scss
-      ├── _header.scss
-      ├── _post.scss
-      ├── _syntax.scss
-      ├── _tables.scss
-      ├── _typography.scss
-      └── _variables.scss
+
+      ├── _sass
+
+      │   ├── _blog.scss
+
+      │   ├── _footer.scss
+
+      │   ├── _fundamentals.scss
+
+      │   ├── _globals.scss
+
+      │   ├── _header.scss
+
+      │   ├── _post.scss
+
+      │   ├── _syntax.scss
+
+      │   ├── _tables.scss
+
+      │   ├── _typography.scss
+      
+      │   └── _variables.scss
 
 
 
