@@ -4,6 +4,9 @@ author:
   github: theomjones
   twitter: theomjones
 
+baseurl: "/fundamental" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 description: Fundamental is a lightweight Jekyll theme.
 
 # Build settings
@@ -22,8 +25,8 @@ plugins:
   - jekyll-archives
 
 # Compress Sass for production.
-sass:
-  style: compressed
+# sass:
+  # style: compressed
 
 # Specifying front matter defaults
 defaults:
