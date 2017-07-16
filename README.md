@@ -1,6 +1,7 @@
-# fundamental
+# ![alt text](assets/images/logo.svg)
+---
 
-A clean, minimal theme for Jekyll.
+Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
 ## Installation
 
@@ -37,48 +38,67 @@ breadcrumbs: true
 ```
 
 Specify default layouts and anything else you'd like in the defaults scope.
-```yaml
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: posts
-    values:
-      layout: "post"
-      author: "Theo"
-```
+
+	defaults:
+	  -
+	    scope:
+	      path: "" # an empty string here means all files in the project
+	      type: posts
+	    values:
+	      layout: "post"
+	      author: "Theo"
 
 
 #### Layouts
 Fundamental has six layouts, all inheriting the layout of the `default` template. They are fairly self explanatory apart from: `tag_page` (the layout for showing individual tag pages) and `archive.html` which shows individual archive pages. Read the `jekyll-archives` [readme](https://github.com/jekyll/jekyll-archives) to get an understanding of how to configure this plugin.
 
+###### File Structure
+	├── _layouts
+	│   ├── archive.html
+	│   ├── blog.html
+	│   ├── default.html
+	│   ├── page.html
+	│   ├── post.html
+	│   └── tag_page.html
+	
+#### Includes
+	├── _includes
+	│   ├── breadcrumbs.html
+	│   ├── footer.html
+	│   ├── head.html
+	│   └── header.html
+
 #### Sass
 Sass is split into logical sections. The `main.scss` file is in `/assets/`.
-`syntax.scss` is optional (well, all the files are!), it just styles Jekyll highlighted code blocks using Github's highlight styles.
+To overwrite these files, add one with the equivalent name to your `_sass` directory. Jekyll will look in here before defaulting back to the theme files.
 
-###### Sass Folder Structure
+##### Sass Folder Structure
+	
+	  ├── _sass
+	  │   ├── _blog.scss
+	  │   ├── _footer.scss
+	  │   ├── _fundamentals.scss
+	  │   ├── _globals.scss
+	  │   ├── _header.scss
+	  │   ├── _post.scss
+	  │   ├── _syntax.scss
+	  │   ├── _tables.scss
+	  │   ├── _typography.scss
+	  │   └── _variables.scss
 
-      ├── _sass
+###### Variables
 
-      │   ├── _blog.scss
+The first file to customise would be `_variables.scss`. You can overwrite any of these variables with your own. There are four palette variables:
 
-      │   ├── _footer.scss
+- `$base: #f5f2f2;` - the body background colour.
+- `$textColor: #444;`
+- `$accent: #4845DF;` - main secondary colour
+- `$tertiary: lighten($accent, 5%);` - lighter version of accent
 
-      │   ├── _fundamentals.scss
+There is one breakpoint: `$break: 600px;`
 
-      │   ├── _globals.scss
-
-      │   ├── _header.scss
-
-      │   ├── _post.scss
-
-      │   ├── _syntax.scss
-
-      │   ├── _tables.scss
-
-      │   ├── _typography.scss
-      
-      │   └── _variables.scss
+`$font` uses a system font stack. Change this to whatever you wish.
+`$font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;`
 
 
 

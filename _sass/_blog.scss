@@ -16,7 +16,7 @@
 .item {
   margin: 50px 0;
   padding-bottom: 20px;
-  border-bottom: dotted 1px rgba($base, .2);
+  border-bottom: dotted 1px rgba($textColor, .2);
   @media screen and (max-width: $break) {
     margin: 15px 0;
     padding-bottom: 0;

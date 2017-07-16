@@ -1,21 +1,21 @@
 table:not(figure) {
   border-collapse: collapse;
   margin: 20px 0;
-  border-bottom: 1px solid rgba($base, .3);
+  border-bottom: 1px solid rgba($textColor, .3);
   th {
     text-align: left;
     padding: 10px 15px;
-    border-bottom: solid 2px rgba($base, .3);
+    border-bottom: solid 2px rgba($textColor, .3);
   }
   tr {
-    border-bottom: 1px solid rgba($base, .1);
+    border-bottom: 1px solid rgba($textColor, .1);
     td:first-child {
-      border-left: 1px solid rgba($base, .3);
+      border-left: 1px solid rgba($textColor, .3);
     }
   }
   td {
     padding: 10px 15px;
-    border-right: 1px solid rgba($base, .3);
+    border-right: 1px solid rgba($textColor, .3);
   }
 }
 
