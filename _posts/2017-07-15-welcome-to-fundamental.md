@@ -7,6 +7,8 @@ tags: Fundamental Jekyll
 
 Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
+Read the README over here --> [Repo](https://github.com/theomjones/fundamental)
+
 This theme uses these plugins, make sure you run `bundle install` and update them to make use of all the features:
 
 1. [jekyll-tagging](https://github.com/pattex/jekyll-tagging)

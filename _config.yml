@@ -17,7 +17,6 @@ breadcrumbs: true
 plugins:
   - jekyll-feed
   - jekyll-archives
-  - jekyll-tagging
 
 # Compress Sass for production.
 sass:

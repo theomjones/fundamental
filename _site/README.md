@@ -26,8 +26,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
-
 #### Config
 The usual configuration settings can be found at the top of `config.yml`.
 
@@ -52,7 +50,25 @@ defaults:
 
 
 #### Layouts
-Fundamental has six layouts, all inheriting the layout of the `default` template.
+Fundamental has six layouts, all inheriting the layout of the `default` template. They are fairly self explanatory apart from: `tag_page` (the layout for showing individual tag pages) and `archive.html` which shows individual archive pages. Read the `jekyll-archives` [readme](https://github.com/jekyll/jekyll-archives) to get an understanding of how to configure this plugin.
+
+#### Sass
+Sass is split into logical sections. The `main.scss` file is in `/assets/`.
+`syntax.scss` is optional (well, all the files are!), it just styles Jekyll highlighted code blocks using Github's highlight styles.
+
+###### Sass Folder Structure
+`├── _blog.scss
+├── _footer.scss
+├── _fundamentals.scss
+├── _globals.scss
+├── _header.scss
+├── _post.scss
+├── _syntax.scss
+├── _tables.scss
+├── _typography.scss
+└── _variables.scss`
+
+
 
 ## Contributing
 

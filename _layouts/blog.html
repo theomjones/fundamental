@@ -11,9 +11,11 @@ layout: default
       <div class="item-head">
         <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
         <span>{{ p.date | date_to_string }}</span> &blacksquare;
+        {% if p.tags  %}
         <span class="tags">
           {{ p | tags }}
-        </span>
+        </span>&blacksquare;
+        {% endif %}
         <span>@{{ p.author }}</span>
       </div>
       <p>{{ p.excerpt | truncatewords: 20 }}</p>
