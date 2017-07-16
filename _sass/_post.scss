@@ -1,10 +1,17 @@
-.page-navigation {
+.post-navigation {
   margin: 60px auto auto auto;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   a {
-    margin: 30px;
+    margin: 10px 0;
+    font-weight: 800;
+    font-size: 1rem;
   }
+}
+
+.info {
+  margin-bottom: 60px;
+  margin-top: -45px;
 }

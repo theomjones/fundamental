@@ -17,6 +17,14 @@ main {
   flex: 1;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $break) {
+      flex-wrap: wrap-reverse;
+  }
+}
+
 
 //Structure
 .container {
@@ -44,6 +52,9 @@ img {
 .crumbs {
   padding: 0;
   margin-top: 2rem;
+  @media screen and (max-width: $break) {
+    font-size: .9rem;
+  }
   li {
     display: inline-block;
     list-style: none;

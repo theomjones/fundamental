@@ -10,8 +10,11 @@ description: Fundamental is a lightweight Jekyll theme.
 markdown: kramdown
 theme: fundamental
 
-# Breadcrumbs
-breadcrumbs: true
+
+# Enable compononents
+enabled:
+  breadcrumbs: true
+  tags: true
 
 #Plugins
 plugins:

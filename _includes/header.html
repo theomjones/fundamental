@@ -3,8 +3,12 @@
   <div class="title"><a href="{% link index.md %}">{{site.title}}</a></div>
   <nav>
     <ul>
-      <li><a href="{% link index.md %}">Home</a></li>
-      <li><a href="{% link archive/index.html %}">Archive</a></li>
+      {% assign menu_items = site.pages | sort: 'order' %}
+      {% for p in menu_items %}
+        {% if p.menu == true %}
+          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </nav>
 </header>

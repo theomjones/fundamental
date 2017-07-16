@@ -1,0 +1,11 @@
+<div class="info">
+  <span>{{ page.date | date_to_string }}</span>
+  {% if site.enabled.tags == true %}
+  &EmptyVerySmallSquare;
+      {% if page.tags  %}
+        <span class="tags">
+          {{ page | tags }}
+        </span>
+      {% endif %}
+    {% endif %}
+</div>

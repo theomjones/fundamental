@@ -56,6 +56,9 @@ blockquote {
   border-left: 4px solid rgba($tertiary, .6);
   margin: 3rem 0;
   background: rgba($tertiary, .1);
+  p {
+    line-height: 1.5;
+  }
 }
 
 figure {

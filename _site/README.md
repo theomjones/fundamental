@@ -1,6 +1,8 @@
 # ![alt text](assets/images/logo.svg)
 ---
 
+***Not yet released**  
+
 Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
 ## Installation
@@ -27,14 +29,20 @@ Or install it yourself as:
 
 ## Usage
 
+### Getting Started
+The top navigation loops through the sites pages that have `menu: true` in the front matter. You can also order the pages by setting the value of `order`
+
+For instance: `order: 2`
+
 #### Config
 The usual configuration settings can be found at the top of `config.yml`.
 
-You can turn the themes breadcrumbs off and on by setting `breadcrumbs` to `true` or `false`.
+You can turn the themes breadcrumbs & tags off and on by setting these to `true` or `false`.
 
 ```yaml
-# Breadcrumbs
-breadcrumbs: true
+enabled:
+	breadcrumbs: true
+	tags: true
 ```
 
 Specify default layouts and anything else you'd like in the defaults scope.
@@ -61,12 +69,22 @@ Fundamental has six layouts, all inheriting the layout of the `default` template
 	│   ├── post.html
 	│   └── tag_page.html
 	
+	
+---
+	
 #### Includes
+File structure
+
 	├── _includes
 	│   ├── breadcrumbs.html
 	│   ├── footer.html
 	│   ├── head.html
 	│   └── header.html
+	
+
+
+---
+
 
 #### Sass
 Sass is split into logical sections. The `main.scss` file is in `/assets/`.
@@ -92,7 +110,7 @@ The first file to customise would be `_variables.scss`. You can overwrite any of
 
 - `$base: #f5f2f2;` - the body background colour.
 - `$textColor: #444;`
-- `$accent: #4845DF;` - main secondary colour
+- `$accent: #4845DF;` - the purple colour
 - `$tertiary: lighten($accent, 5%);` - lighter version of accent
 
 There is one breakpoint: `$break: 600px;`
@@ -104,15 +122,7 @@ There is one breakpoint: `$break: 600px;`
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[theomjones]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/theomjones/fundamental). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

@@ -4,21 +4,17 @@ layout: default
 
 {{ content }}
 
-<!-- Post Loop -->
-<ul class="post-loop">
-{% for p in site.posts %}
-  <li class="item">
-      <div class="item-head">
-        <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
-        <span>{{ p.date | date_to_string }}</span> &blacksquare;
-        {% if p.tags  %}
-        <span class="tags">
-          {{ p | tags }}
-        </span>&blacksquare;
-        {% endif %}
-        <span>@{{ p.author }}</span>
-      </div>
-      <p>{{ p.excerpt | truncatewords: 20 }}</p>
-  </li>
-{% endfor %}
-</ul>
+<div class="flex">
+  {% if site.enabled.tags == true %}
+  <div class="tag-cloud">
+    <h3>Tags</h3>
+    {{ site | tag_cloud }}
+  </div>
+  {% endif %}
+  <!-- Post Loop -->
+  <ul class="post-loop">
+    {% for p in site.posts %}
+      {% include item.html %}
+    {% endfor %}
+  </ul>
+</div>

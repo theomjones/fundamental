@@ -1,5 +1,5 @@
 
-{% if site.breadcrumbs %}
+{% if site.enabled.breadcrumbs %}
 {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
 {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 {% assign previous="" %}
@@ -14,9 +14,9 @@
    {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
 
    <li><a href="{{previous}}">{{ first_word }}</a> </li>
-
    {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
   {% endfor %}
  {% endif %}
+ <li>/ {{page.title}}</li>
 </ol>
 {% endif %}
