@@ -4,7 +4,7 @@ author:
   github: theomjones
   twitter: theomjones
 
-baseurl: "/fundamental" # the subpath of your site, e.g. /blog
+baseurl: "/fundamental" # Use if your site will be located in a subdirectory, e.g. /blog.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: Fundamental is a lightweight Jekyll theme.
@@ -18,6 +18,8 @@ theme: fundamental
 enabled:
   breadcrumbs: true
   tags: true
+  # Enable RSS in menu
+  rss: false
 
 #Plugins
 plugins:
@@ -42,6 +44,8 @@ defaults:
 #PLUGIN CONFIG
 #######
 
+permalink: pretty
+
 # Archives
 jekyll-archives:
   enabled:
@@ -49,6 +53,8 @@ jekyll-archives:
   - month
   - tags
   layout: 'archive'
+  layouts:
+    tag: 'tag_page'
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'
@@ -57,5 +63,5 @@ jekyll-archives:
     category: '/category/:name/'
 
 # Jekyll Tagging
-tag_page_layout: tag_page
-tag_page_dir: tag
+#tag_page_layout: tag_page
+#tag_page_dir: tag

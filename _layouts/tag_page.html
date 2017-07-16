@@ -3,10 +3,12 @@ layout: default
 type: 'tag_page'
 ---
 
-
-<h1>#{{ page.tag }}</h1>
-<ul>
-{% for post in page.posts %}
-  <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
-{% endfor %}
+<h1>#{{ page.title }}</h1>
+<ul class="posts">
+  {% for post in page.posts %}
+    <li>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+  {% endfor %}
 </ul>

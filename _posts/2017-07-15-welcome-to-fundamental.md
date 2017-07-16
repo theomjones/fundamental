@@ -2,7 +2,10 @@
 date: 2017-07-15T19:54:53+01:00
 title: Welcome To Fundamental
 author: Theo
-tags: [Fundamental, Jekyll]
+tags:
+  - Fundamental
+  - Jekyll
+  - Readme
 ---
 
 Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
@@ -47,6 +50,7 @@ const david = new Person(22, 'David');
 {% endhighlight %}
 
 #### Table Time
+Todo: Style tables better.
 
 | Tables        | Are           | Boring  |
 | ------------- |:-------------:| -----:|
@@ -76,9 +80,11 @@ Nullam quis [risus](https://www.google.co.uk) eget urna mollis ornare vel eu leo
 - Another item in the list.
 
 ### Images
-(Of Nicholas Cage)
+(Of [Bill Murray](http://fillmurray.com))
 
-![Cage](http://placecage.com/200/300)
-![Cage](http://placecage.com/500/200)
-![Cage](http://placecage.com/600/300)
-![Cage](http://placecage.com/800/500)
+![Cage](http://fillmurray.com/140/300)
+![Cage](http://fillmurray.com/500/300)
+![Cage](http://fillmurray.com/140/300)
+![Cage](http://fillmurray.com/395/350)
+![Cage](http://fillmurray.com/395/350)
+![Cage](http://fillmurray.com/800/600)

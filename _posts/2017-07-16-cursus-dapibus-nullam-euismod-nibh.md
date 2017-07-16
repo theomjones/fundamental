@@ -2,7 +2,9 @@
 date: 2017-07-09T00:09:45+01:00
 title: Cursus Dapibus Nullam Euismod Nibh
 author: Theo
-tags: [Fundamental, Jekyll]
+tags:
+  - Fundamental
+  - Jekyll
 ---
 
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.

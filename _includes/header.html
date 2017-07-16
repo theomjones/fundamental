@@ -1,14 +1,17 @@
 <header>
   <!-- <img class="logo" src="{% link assets/images/logo.svg %}" alt="Logo"> -->
-  <div class="title"><a href="{{ site.baseurl }}{% link index.md %}">{{site.title}}</a></div>
+  <div class="title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
   <nav>
     <ul>
       {% assign menu_items = site.pages | sort: 'order' %}
       {% for p in menu_items %}
         {% if p.menu == true %}
-          <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+          <li><a href="{{ p.url | relative_url }}"{% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a></li>
         {% endif %}
       {% endfor %}
+      {% if site.enabled.rss == true %}
+      <li><a href="{{ "/feed.xml" | relative_url }}">RSS</a></li>
+      {% endif %}
     </ul>
   </nav>
 </header>

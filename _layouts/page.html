@@ -3,12 +3,7 @@ layout: default
 ---
 
 {% include breadcrumbs.html %}
+
 {{ content }}
 
-
-{% if site.enabled.tags == true %}
-<div class="tag-cloud">
-  <h3>Tags</h3>
-  {{ site | tag_cloud }}
-</div>
-{% endif %}
+{% include tag-cloud.html %}

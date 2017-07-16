@@ -38,3 +38,13 @@ header {
     color: $textColor;
   }
 }
+
+.active {
+  position: relative;
+  &:before {
+    content: '‥';
+    position: absolute;
+    bottom: -15px;
+    left: 45%;
+  }
+}

@@ -1,0 +1,9 @@
+{% if site.enabled.tags == true %}
+<div class="tag-cloud">
+  <h3>Tags</h3>
+  {% for tag in site.tags %}
+  {% comment %} Do not remove the [0]. This breaks Jekyll :( {% endcomment %}
+    <a href="{{site.baseurl}}/tag/{{tag[0]}}">{{tag[0]}}</a>
+  {% endfor %}
+</div>
+{% endif %}

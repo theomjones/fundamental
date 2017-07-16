@@ -8,5 +8,5 @@ gem "jekyll", "3.5.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem 'jekyll-archives'
-   gem 'jekyll-tagging'
+   #gem 'jekyll-tagging'
 end
