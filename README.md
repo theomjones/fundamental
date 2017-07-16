@@ -1,9 +1,17 @@
-# ![alt text](assets/images/logo.svg)
----
-
-***Not yet released**  
+# ![alt text](http://theomjones.com/fundamental/assets/images/logo.svg)
 
 Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
+
+## Features
+
+- Tag support
+- Archive by year support (more to come!)
+- Breadcrumbs
+- Editable color palette: (`_variables.scss`)
+- Subdirectory support
+- Automatic header navigation 
+- Syntax highlighting 
+
 
 ## Installation
 
@@ -30,6 +38,7 @@ Or install it yourself as:
 ## Usage
 
 ### Getting Started
+
 The top navigation loops through the sites pages that have `menu: true` in the front matter. You can also order the pages by setting the value of `order`
 
 For instance: `order: 2`

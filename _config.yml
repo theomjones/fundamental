@@ -1,10 +1,12 @@
+theme: fundamental
+
 title: Fundamental
 author:
   name: Theo Messenger-Jones
   github: theomjones
   twitter: theomjones
 
-baseurl: "/fundamental" # Use if your site will be located in a subdirectory, e.g. /blog.
+baseurl: "" # Use if your site will be located in a subdirectory, e.g. /blog.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: Fundamental is a lightweight Jekyll theme.
