@@ -2,7 +2,7 @@
 date: 2017-07-15T19:54:53+01:00
 title: Welcome To Fundamental
 author: Theo
-tags: Fundamental Jekyll
+tags: [Fundamental, Jekyll]
 ---
 
 Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
@@ -24,7 +24,7 @@ Fundamental implements it's own breadcrumb solution. It is toggleable in the `co
 
 ##### Blockquote
 
-> 'This is a blockquote, revel in it's beauty.'
+> "This is a blockquote, ain't it pretty."
 
 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 

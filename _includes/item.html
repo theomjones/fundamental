@@ -1,6 +1,6 @@
 <li class="item">
     <div class="item-head">
-      <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}/{{ p.url }}">{{ p.title }}</a></h2>
       <span>{{ p.date | date_to_string }}</span>
       {% if site.enabled.tags == true %}
       &EmptyVerySmallSquare;
