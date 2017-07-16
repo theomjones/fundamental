@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /404.html
+---
+
+<h1> Doesn't look like anything to me. </h1>
+<h3>404 Error: Page not found</h3>
+
+<div class="_404">
+  {% include tag-cloud.html %}
+  <div class="post-list">
+    <h3>Recent Posts</h3>
+  {% for p in site.posts limit: 3 %}
+    <a href="{{p.url | relative_url }}">{{p.title}}</a>
+  {% endfor %}
+</div>
+</div>

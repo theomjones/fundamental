@@ -12,11 +12,11 @@ Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It 
 
 Read the README over here --> [Repo](https://github.com/theomjones/fundamental)
 
-This theme uses these plugins, make sure you run `bundle install` and update them to make use of all the features:
+Fundamemtal uses these plugins. When you have installed the Fundamental gem, run bundle install to install the required plugins. They can be turned on and off in your configuration file.
 
-1. [jekyll-tagging](https://github.com/pattex/jekyll-tagging)
-2. [jekyll-feed](https://github.com/jekyll/jekyll-feed)
-3. [jekyll-archives](https://github.com/jekyll/jekyll-archives)
+1. [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+2. [jekyll-archives](https://github.com/jekyll/jekyll-archives)
+3. [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 
 Fundamental implements it's own breadcrumb solution. It is toggleable in the `config.yml` file by setting `breadcrumbs` to either `true` or `false`.
 

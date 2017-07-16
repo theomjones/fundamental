@@ -2,10 +2,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  {% if page.type == 'tag_page' %}
-    <title>{{ page.tag }} | {{site.title}}</title>
-    {% else %}
-      <title>{{page.title}} | {{site.title}}</title>
+  <link rel="stylesheet" href="{{ "assets/main.css" | relative_url }}">
+  {% if site.favicon == true %}
+    <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
   {% endif %}
-  <link rel="stylesheet" href="{{ "assets/main.css" | relative_url }}"
+  {% seo %}
 </head>

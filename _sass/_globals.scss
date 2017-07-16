@@ -25,7 +25,6 @@ main {
   }
 }
 
-
 //Structure
 .container {
   max-width: 800px;
@@ -59,4 +58,25 @@ img {
     display: inline-block;
     list-style: none;
   }
+}
+
+.tag-cloud {
+  margin-right: 50px;
+  margin-top: 10px;
+  a {
+    display: block;
+    margin-top: 4px;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+._404 {
+ display: flex;
+ justify-content: flex-start;
+}
+
+.post-list {
+ @extend .tag-cloud;
 }
