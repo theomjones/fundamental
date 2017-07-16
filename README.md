@@ -1,4 +1,4 @@
-# ![alt text](assets/images/logo.svg)
+# ![alt text](http://svgshare.com/i/2FY.svg)
 ---
 
 Fundamental is a clean, simple, lightweight theme. No frameworks, no jQuery. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
@@ -60,7 +60,7 @@ Fundamental has six layouts, all inheriting the layout of the `default` template
 	│   ├── page.html
 	│   ├── post.html
 	│   └── tag_page.html
-	
+
 #### Includes
 	├── _includes
 	│   ├── breadcrumbs.html
@@ -73,7 +73,7 @@ Sass is split into logical sections. The `main.scss` file is in `/assets/`.
 To overwrite these files, add one with the equivalent name to your `_sass` directory. Jekyll will look in here before defaulting back to the theme files.
 
 ##### Sass Folder Structure
-	
+
 	  ├── _sass
 	  │   ├── _blog.scss
 	  │   ├── _footer.scss
