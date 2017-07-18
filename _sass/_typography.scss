@@ -11,6 +11,9 @@ h1 {
     font-size: 3rem;
     margin-top: 5px;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 2.5rem;
+  }
 }
 h2 {
   font-size: 3rem;

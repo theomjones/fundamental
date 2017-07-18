@@ -14,4 +14,7 @@
 .info {
   margin-bottom: 60px;
   margin-top: -45px;
+  @media screen and (max-width: $break) {
+    margin-bottom: 40px;
+  }
 }

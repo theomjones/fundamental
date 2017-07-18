@@ -1,3 +1,3 @@
 <footer>
-    <p>Fundamental was built with &hearts; by <a href="http://theomjones.com">Theo</a>. For everyone.</p>
+    <p>{{site.footer.content}}{% if site.footer.year == true %} {{site.footer.separator}} {{ 'now' | date: '%Y' }}{% endif %}</p>
 </footer>

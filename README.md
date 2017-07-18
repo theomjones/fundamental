@@ -48,7 +48,7 @@ After installing you should have a `config.yml` file in your base directory. Cop
 Jekyll gives you an `index.md` file as your homepage. Copy this into it to get started, the front matter will be explained below:  **!! Something to note**, Fundamental does not currently support categories (they're coming!). The default page Jekyll produces will break breadcrumbs (for now).
 
 	---
-	layout: blog
+	layout: home
 	title: Home
 	menu: true
 	order: 1
@@ -147,12 +147,10 @@ The first file to customise would be `_variables.scss`, you're probably best cop
 - `$accent: #4845DF;` - the purple colour
 - `$tertiary: lighten($accent, 5%);` - lighter version of accent
 
-There is one breakpoint: `$break: 600px;`
-
 `$font` uses a system font stack. Change this to whatever you wish.
 `$font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;`
 
-
+TODO: Separate palette from other variables. For easier custom colours.
 
 ## Contributing
 

@@ -3,7 +3,6 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
   align-content: center;
   flex-wrap: wrap;
   @media screen and (max-width: $break) {
@@ -32,6 +31,7 @@ header {
   margin-left: 50px;
   @media screen and (max-width: 400px) {
     margin-left: 20px;
+    margin-top: 5px;
   }
   a {
     text-decoration: none;

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: home
 title: Home
 menu: true
 order: 1
