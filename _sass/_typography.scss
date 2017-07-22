@@ -69,6 +69,10 @@ figure {
   background: lighten($accent, 35%);
   padding: 10px 10px 0 10px;
   border-radius: 3px;
+  code {
+    display: block;
+    background: none;
+  }
 }
 
 
@@ -96,6 +100,6 @@ ul {
 }
 
 code {
-  background: lighten($accent, 30%);
+  background: rgba($accent, .2);
   padding: 0;
 }

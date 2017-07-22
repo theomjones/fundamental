@@ -1,6 +1,7 @@
 html {
   display: flex; //IE 11 Fix for sticky footer
   flex-direction: column;
+  overflow-x: hidden;
 }
 body {
   font-family: $font;
