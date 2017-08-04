@@ -1,5 +1,5 @@
 .post-navigation {
-  margin: 60px auto auto auto;
+  margin: 60px auto 40px auto;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -9,6 +9,14 @@
     font-weight: 800;
     font-size: 1rem;
   }
+}
+
+img + em {
+  color: rgba(white, .7);
+  font-size: 1rem;
+  margin-top: -50px;
+  margin-left: 20px;
+  display: block;
 }
 
 .info {

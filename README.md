@@ -4,7 +4,7 @@
 
 Fundamental is a clean, fully responsive, lightweight Jekyll theme for blogging. No frameworks, no JavaScript. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
-View the [demo here](http://theomjones.com/fundamental).
+View the [demo here](https://blog.theomjones.com).
 
 ## Features
 
@@ -21,6 +21,12 @@ View the [demo here](http://theomjones.com/fundamental).
 
 
 ## Installation
+
+##### Via Direct Download:
+
+[Download](https://github.com/theomjones/fundamental-blank/archive/master.zip) or [clone](https://github.com/theomjones/fundamental-blank/archive) the `fundamental-blank` repository. All you have to do from here is run `bundle install` and then `bundle update`. You're good to go!
+
+**Or...**
 
 Add this line to your Jekyll site's `Gemfile`:
 

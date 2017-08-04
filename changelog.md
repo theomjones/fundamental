@@ -2,8 +2,17 @@
 
 [![Gem Version](https://badge.fury.io/rb/fundamental.svg)](https://badge.fury.io/rb/fundamental)
 
-Currently unstable.
+Unstable until 1.0
 
+### 0.2.4 | 04/08/17
+- Added a direct download install option for super easy setup.
+- Disqus Comments! Head over to your `config.yml` and add `comments: true` to your `enabled` block, make sure you pop your forum short name at the site level too: `disqus_shortname: your-forum-shortname`. Any post with `comments: true` set in the front matter will display comments. Set a default in the `posts` scope if you'd like all your posts to have comments.
+- Easily caption your photos by putting a `em` tag on the line below the photo (no spaced line break)...
+e.g.
+      ![img]('your_img_url')
+      *Your Caption*
+
+![Bill Murray](http://i.imgur.com/9kczUsy.png)
 ### 0.2.3 | 04/08/17
 - New Social Buttons! Grab the latest addition from [`config.yml`](https://github.com/theomjones/fundamental/blob/master/_config.yml)
 - New tag cloud design

@@ -7,11 +7,12 @@ author:
   twitter: username
 
 # If you don't have a favicon, change to false.
-favicon: true
+favicon: false
 
 footer:
   separator: '|'
   content: Ⓒ Your Name Here
+  # Append current year on build
   year: true
 
 baseurl: "" # Use if your site will be located in a subdirectory, e.g. /blog.
@@ -24,10 +25,11 @@ markdown: kramdown
 theme: fundamental
 
 
-# Enable compononents
+# Enable theme compononents
 enabled:
   breadcrumbs: true
   tags: true
+  comments: false
   # Enable RSS menu item
   rss: false
   seo: true
@@ -36,9 +38,12 @@ enabled:
     enabled: true
     twitter: true
     facebook: true
-    messenger: true
-    whatsapp: true
+    messenger: false
+    whatsapp: false
 
+# Get your disquas shortname from the disqus admin panel for your blog.
+disqus_shortname: your-forum-shortname
+# Define the colors for social buttons.
 socialBtnsColor: '#4845DF'
 
 #Plugins
@@ -60,12 +65,14 @@ defaults:
     values:
       layout: "post"
       author: "YOUR NAME"
+      comments: true
+
+
+permalink: pretty
 
 #######
 #PLUGIN CONFIG
 #######
-
-permalink: pretty
 
 # Archives
 jekyll-archives:
