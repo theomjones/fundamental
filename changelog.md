@@ -1,6 +1,6 @@
 # Changelog
 
-![Gem Version 0.2.3](https://badge.fury.io/rb/fundamental.svg)
+[![Gem Version](https://badge.fury.io/rb/fundamental.svg)](https://badge.fury.io/rb/fundamental)
 
 Currently unstable.
 

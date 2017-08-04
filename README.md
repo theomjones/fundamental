@@ -1,6 +1,6 @@
 # ![Fundamental Logotype](http://svgshare.com/i/2V8.svg)
 
-![Gem Version 0.2.3](https://badge.fury.io/rb/fundamental.svg)
+[![Gem Version](https://badge.fury.io/rb/fundamental.svg)](https://badge.fury.io/rb/fundamental)
 
 Fundamental is a clean, fully responsive, lightweight Jekyll theme for blogging. No frameworks, no JavaScript. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
