@@ -1,21 +1,23 @@
-title: Fundamental
+# REMEMBER TO GO THROUGH THIS FILE, PERSONALISING THE SETTINGS
+
+title: Your Title
 author:
-  name: Theo M Jones
-  github: theomjones
-  twitter: theomjones
+  name: Your Name
+  github: username
+  twitter: username
 
 # If you don't have a favicon, change to false.
 favicon: true
 
 footer:
   separator: '|'
-  content: Ⓒ Theo M Jones
+  content: Ⓒ Your Name Here
   year: true
 
 baseurl: "" # Use if your site will be located in a subdirectory, e.g. /blog.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-description: Fundamental is a lightweight Jekyll theme.
+description: Your site description.
 
 # Build settings
 markdown: kramdown
@@ -29,6 +31,15 @@ enabled:
   # Enable RSS menu item
   rss: false
   seo: true
+  # Share buttons are only on desktop (user use the share menu on mobile).
+  social:
+    enabled: true
+    twitter: true
+    facebook: true
+    messenger: true
+    whatsapp: true
+
+socialBtnsColor: '#4845DF'
 
 #Plugins
 plugins:
@@ -37,8 +48,8 @@ plugins:
   - jekyll-seo-tag
 
 # Compress Sass for production.
-# sass:
-  # style: compressed
+sass:
+  style: compressed
 
 # Specifying front matter defaults
 defaults:
@@ -48,7 +59,7 @@ defaults:
       type: posts
     values:
       layout: "post"
-      author: "Theo"
+      author: "YOUR NAME"
 
 #######
 #PLUGIN CONFIG

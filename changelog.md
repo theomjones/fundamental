@@ -1,7 +1,15 @@
 # Changelog
+
+![Gem Version 0.2.3](https://badge.fury.io/rb/fundamental.svg)
+
 Currently unstable.
 
-### 0.2.1 | 22/07/17
+### 0.2.3 | 04/08/17
+- New Social Buttons! Grab the latest addition from [`config.yml`](https://github.com/theomjones/fundamental/blob/master/_config.yml)
+- New tag cloud design
+- Rewrote sections of default [`config.yml`](https://github.com/theomjones/fundamental/blob/master/_config.yml) to better suit a new user.
+
+### 0.2.2 | 22/07/17
 - Fixed a problem with code blocks pushing off the screen and causing horizontal scrolling on smaller devices.
 - Did some more spacing changes.
 - Changed the site-wide archive page to be grouped by year.

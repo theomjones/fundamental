@@ -68,9 +68,20 @@ img {
 .tag-cloud {
   margin-right: 50px;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   a {
-    display: block;
-    margin-top: 4px;
+    display: inline-block;
+    border: solid $accent 1px;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-top: 6px;
+    text-decoration: none;
+    &:hover {
+      background: $accent;
+      color: $base;
+    }
   }
   h3 {
     font-size: 1.5rem;

@@ -18,3 +18,32 @@
     margin-bottom: 40px;
   }
 }
+
+article {
+  position: relative;
+}
+
+
+
+.share {
+  position: fixed;
+  transform: translateX(-90px);
+  bottom: 50%;
+  a, svg {
+    &:hover {
+      opacity: 1;
+    }
+  }
+  svg {
+    opacity: .3;
+    height: 30px;
+    width: 30px;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin: 8px 0;
+    list-style: none;
+  }
+}

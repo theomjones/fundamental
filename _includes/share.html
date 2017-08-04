@@ -1,0 +1,34 @@
+{% assign socialBtns = site.enabled.social %}
+
+{% if socialBtns.enabled == true %}
+
+<div class="share">
+    <ul>
+        {% if socialBtns.twitter %}
+        <li class="twitter">
+            <a href="https://twitter.com/intent/tweet?via={{ site.author.twitter }}&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank">
+                {% include twitter.svg %}
+            </a>
+        </li>
+        {% endif %}
+        {% if socialBtns.facebook %}
+        <li class="facebook">
+            <a href="http://www.facebook.com/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank">
+                {% include facebook.svg %}
+            </a>
+        </li>
+        {% endif %}
+        {% if socialBtns.messenger %}
+        <li class="messenger">
+          <a href='fb-messenger://share/?link={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'>{% include messenger.svg %}</a>
+            </a>
+        </li>
+        {% endif %}
+        {% if socialBtns.whatsapp %}
+        <li class="whatsapp">
+          <a href='whatsapp://send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'>{% include whatsapp.svg %}</a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
+{% endif %}

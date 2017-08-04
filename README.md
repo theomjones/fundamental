@@ -1,4 +1,6 @@
-# ![Fundamental Logotype](http://theomjones.com/fundamental/assets/images/logo.svg)
+# ![Fundamental Logotype](http://svgshare.com/i/2V8.svg)
+
+![Gem Version 0.2.3](https://badge.fury.io/rb/fundamental.svg)
 
 Fundamental is a clean, fully responsive, lightweight Jekyll theme for blogging. No frameworks, no JavaScript. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
@@ -10,11 +12,12 @@ View the [demo here](http://theomjones.com/fundamental).
 - Archive support
 - Breadcrumbs
 - Editable color palette via: (`_variables.scss`)
-- Automatic header navigation 
-- Syntax highlighting 
+- Automatic header navigation
+- Syntax highlighting
+- Social Buttons
 
- 
-![alt text](http://theomjones.com/fundamental/screenshot.png)
+
+![Screen Cap](http://i.imgur.com/jTFtqri.png)
 
 
 ## Installation
@@ -37,7 +40,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install fundamental
+   $ gem install fundamental
 
 ## Usage
 
@@ -53,7 +56,7 @@ Jekyll gives you an `index.md` file as your homepage. Copy this into it to get s
 	menu: true
 	order: 1
 	---
-	
+
 If you want to add the 'Archive' file you see in the demo. Create an `/archive` directory in your base directory. Then create an `index.md` inside it. Ensure it has the `layout: site-archive`. This layout displays all the posts in the site.
 
 ##### Plugins
@@ -61,7 +64,7 @@ Fundamemtal uses these plugins. When you have installed the Fundamental gem, run
 
 1. [jekyll-feed](https://github.com/jekyll/jekyll-feed)
 2. [jekyll-archives](https://github.com/jekyll/jekyll-archives)
-3. [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) 
+3. [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 
 #### Navigation
 The top navigation loops through the sites pages that have `menu: true` in the front matter. This makes it easy to add new pages to your site. You can also order the pages by setting the value of `order`.
@@ -71,7 +74,7 @@ For instance: `order: 2` will place this item second (to the right of the first 
 #### Config
 The usual configuration settings can be found at the top of `config.yml`.
 
-You can turn the themes components off and on by setting these to `true` or `false`.
+You can turn the themes components off and on by setting these to `true` or `false`. These are fairly self explanatory, the social ones can also be turned on or off independently.
 
 ```yaml
 enabled:
@@ -80,10 +83,17 @@ enabled:
   # Enable RSS menu item
   rss: false
   seo: true
+  # Share buttons are only on desktop (user use the share menu on mobile).
+  social:
+    enabled: true
+    twitter: true
+    facebook: true
+    messenger: true
+    whatsapp: true
 ```
 
 #### Layouts
-For blog posts use the `post.html` layout (this is already set as default via config file.) For normal pages use the `page.html` layout. Naturally, the blog layout is used for the blog page on the home screen. All of these layouts inherit from the `default` layout, which contains the head and footer includes.
+For blog posts use the `post` layout (this is already set as default via config file, unless changed.) For normal pages use the `page` layout. Naturally, the blog layout is used for the blog page on the home screen. All of these layouts inherit from the `default` layout, which contains the head and footer includes.
 
 The other layouts are for the `jekyll-archives` plugin.
 
@@ -98,15 +108,15 @@ The other layouts are for the `jekyll-archives` plugin.
 	│   ├── post.html
 	|   ├── site-archive.html
 	│   └── tag_page.html
-		
-	
+
+
 ---
-	
+
 #### Includes
 The includes are fairly self explanatory aside from info/item. `info.html` is the post information include in the `post` layout. Item is the blog item that gets outputted on the homepage. `tag-cloud.html` is the recurrrent tag list you see on the homepage/throughout the sites pages.
 ######File structure
 
-		
+
 	├── _includes
 	│   ├── breadcrumbs.html
 	│   ├── footer.html
@@ -125,7 +135,7 @@ Sass is split into logical sections. The `main.scss` file is in `/assets/`.
 To overwrite these files, add one with the equivalent name to your `_sass` directory (make one if it doesn't already exist). Jekyll will look in here before defaulting back to the theme files.
 
 ##### Sass Folder Structure
-	
+
 	  ├── _sass
 	  │   ├── _blog.scss
 	  │   ├── _footer.scss
@@ -162,8 +172,8 @@ The theme is available as open source under the terms of the [MIT License](https
 
 ## More Screenshots
 ### Blog Post
-![alt text](http://theomjones.com/fundamental/assets/images/screenshot2.png)
+![Blog Screen Cap](http://i.imgur.com/39WA9LJ.png)
 
 ### 404 Page
-![alt text](http://theomjones.com/fundamental/assets/images/screenshot3.png)
+![404 Screen Cap](http://i.imgur.com/G68JKgd.png)
 [You can get this 404 page from the repo to use in your site.](https://github.com/theomjones/fundamental/blob/master/404.html) Just copy it into your main directory.

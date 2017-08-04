@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fundamental (0.2.1)
+    fundamental (0.2.3)
       jekyll (~> 3.5)
       jekyll-archives (~> 2.1.1)
       jekyll-seo-tag
