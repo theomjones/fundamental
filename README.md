@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/fundamental.svg)](https://badge.fury.io/rb/fundamental)
 
+See latest changes in [changelog.md])(https://github.com/theomjones/fundamental/blob/master/changelog.md))
+
 Fundamental is a clean, fully responsive, lightweight Jekyll theme for blogging. No frameworks, no JavaScript. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
 View the [demo here](https://blog.theomjones.com).
@@ -15,6 +17,7 @@ View the [demo here](https://blog.theomjones.com).
 - Automatic header navigation
 - Syntax highlighting
 - Social Buttons
+- Bio Section
 
 
 ![Screen Cap](http://i.imgur.com/jTFtqri.png)
@@ -98,39 +101,64 @@ enabled:
     whatsapp: true
 ```
 
+##### Bio Section
+
+You can copy this code into your `config.yml` file. `enabled` can be set to either true or false (as per plugins). You can then edit the fields how you like. The `img_url` can be linked to any image, locally or remote, `false` === a default icon which inherits the colour from `socialBtnsColor`.
+
+    bio:
+        enabled: true
+        heading: 'Your bio title'
+        subheading: 'Your bio subheading'
+        img_url: false #put a url to an image in here or use the icon with false.
+        body: >
+          In this blog I'm documenting my ever evolving knowledge in
+          making things for the web. I'll touch on topics like UI, UX,
+          JavaScript, CSS and any other technologies I come across.
+
+This appears as a slide out menu from a fixed circular icon in the bottom right corner.
+
 #### Layouts
-For blog posts use the `post` layout (this is already set as default via config file, unless changed.) For normal pages use the `page` layout. Naturally, the blog layout is used for the blog page on the home screen. All of these layouts inherit from the `default` layout, which contains the head and footer includes.
+For blog posts use the `post` layout (this is already set as default via config file, unless changed.) For normal pages use the `page` layout. Naturally, the home layout is used for the home page which is where the post-loop (blog) lives. All of these layouts inherit from the `default` layout, which contains the head and footer includes.
 
 The other layouts are for the `jekyll-archives` plugin.
 
 ###### File Structure
 
-	├── _layouts
-	│   ├── archive.html
-	│   ├── blog.html
-	│   ├── default.html
-	│   ├── month.html
-	│   ├── page.html
-	│   ├── post.html
-	|   ├── site-archive.html
-	│   └── tag_page.html
+  	├── _layouts
+  	│   ├── archive.html
+  	│   ├── default.html
+    |   ├── home.html
+  	│   ├── month.html
+  	│   ├── page.html
+  	│   ├── post.html
+  	|   ├── site-archive.html
+  	│   └── tag_page.html
 
 
 ---
 
 #### Includes
-The includes are fairly self explanatory aside from info/item. `info.html` is the post information include in the `post` layout. Item is the blog item that gets outputted on the homepage. `tag-cloud.html` is the recurrrent tag list you see on the homepage/throughout the sites pages.
+The includes are fairly self explanatory aside from info/item. `info.html` is the post information include in the `post` layout. Item is the blog item that gets outputted on the homepage. `tag-cloud.html` is the recurrent tag list you see on the homepage/throughout the sites pages.
+There's a few svg includes as well that are just buttons/icons.
 ######File structure
 
 
-	├── _includes
-	│   ├── breadcrumbs.html
-	│   ├── footer.html
-	│   ├── head.html
-	│   ├── header.html
-	│   ├── info.html
-	│   ├── item.html
-	│   └── tag-cloud.html
+    ├── _includes
+    │   ├── bio.html
+    │   ├── bio.svg
+    │   ├── breadcrumbs.html
+    │   ├── comments.html
+    │   ├── facebook.svg
+    │   ├── footer.html
+    │   ├── head.html
+    │   ├── header.html
+    │   ├── info.html
+    │   ├── item.html
+    │   ├── messenger.svg
+    │   ├── share.html
+    │   ├── tag-cloud.html
+    │   ├── twitter.svg
+    │   └── whatsapp.svg
 
 
 ---
@@ -156,7 +184,7 @@ To overwrite these files, add one with the equivalent name to your `_sass` direc
 
 ###### Variables
 
-The first file to customise would be `_variables.scss`, you're probably best copying it from the repo and editing it. You can overwrite any of these variables with your own. There are four palette variables:
+The first file to customise would be `_variables.scss`, you're probably best [copying it from the repo](https://github.com/theomjones/fundamental/blob/master/_sass/_variables.scss) and editing it. You can overwrite any of these variables with your own. There are four palette variables:
 
 - `$base: #f5f2f2;` - the body background colour.
 - `$textColor: #444;`

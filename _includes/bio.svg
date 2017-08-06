@@ -1,0 +1,14 @@
+<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path d="M28 52C14.193 52 3 40.807 3 27S14.193 2 28 2s25 11.193 25 25-11.193 25-25 25zm0-25c2.644 0 4.787-2.143 4.787-4.787S30.644 17.426 28 17.426s-4.787 2.143-4.787 4.787S25.356 27 28 27zm.133 2.66c-7.402 0-9.707 4.787-9.707 4.787v2.393H37.84v-2.393s-2.305-4.787-9.707-4.787z" id="b"/>
+    <filter y="-8%" filterUnits="objectBoundingBox" id="a">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+    <use fill="{{site.socialBtnsColor}}" xlink:href="#b"/>
+  </g>
+</svg>

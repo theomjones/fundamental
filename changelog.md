@@ -4,6 +4,22 @@
 
 Unstable until 1.0
 
+### 0.3.0 | 06/08/17
+
+*BIG UPDATE*
+
+- Set the social buttons color by setting the value of `socialBtnsColor:` in `config.yml`. This also affects the _bio_ icon in the bottom right, if enabled – see below.
+- New bio section. Copy this code into your config file. Enabled can be set to either true or false. You can then edit the fields how you like. The `img_url` can be linked to any image, locally or remote, `false` === a default icon which inherits the colour from `socialBtnsColor`.
+      bio:
+        enabled: true
+        heading: 'Your bio title'
+        subheading: 'Your bio subheading'
+        img_url: false #put a url to an image in here or use the icon with false.
+        body: >
+          In this blog I'm documenting my ever evolving knowledge in
+          making things for the web. I'll touch on topics like UI, UX,
+          JavaScript, CSS and any other technologies I come across.
+
 ### 0.2.4 | 04/08/17
 - Added a direct download install option for super easy setup.
 - Disqus Comments! Head over to your `config.yml` and add `comments: true` to your `enabled` block, make sure you pop your forum short name at the site level too: `disqus_shortname: your-forum-shortname`. Any post with `comments: true` set in the front matter will display comments. Set a default in the `posts` scope if you'd like all your posts to have comments.

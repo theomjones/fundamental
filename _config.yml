@@ -46,6 +46,13 @@ disqus_shortname: your-forum-shortname
 # Define the colors for social buttons.
 socialBtnsColor: '#4845DF'
 
+bio:
+  enabled: true
+  heading: Your Bio Heading
+  subheading: 'Your subheading'
+  img_url: false # 'your-img-url'
+  body: >
+    Your Bio Description Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
 #Plugins
 plugins:
   - jekyll-feed

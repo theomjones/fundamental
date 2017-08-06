@@ -1,0 +1,33 @@
+<a id="about-link" style="font-size: 2rem; position: fixed; right: 20px; z-index: 3; transition: transform 0.2s linear; bottom: 20px; color: #444">{% if site.bio.img_url %}<img class="avatar" style="box-shadow: -1px 2px 2px 0 rgba(20, 20, 20, .5); max-height: 50px; border-radius: 50%;" src="{{site.bio.img_url}}"/>{% else %}{% include bio.svg %}{% endif %}</a>
+
+<div id="info" style="height: 100vh; width: 500px; max-width: 100%; transform: translateX(535px); transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95); background: white; position: fixed; top: 0; right: 0; box-shadow: 2px 2px 4px 1px rgba(20, 20, 20, .5);">
+  <div class="container" style="max-width: 85%">
+    <h1 style="margin-bottom: 1rem;">{{site.bio.heading}}</h1>
+    <h5 style="margin: 0">{{site.bio.subheading}}</h5>
+    <p style="line-height: 1.7;">{{site.bio.body}}</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  const link = document.getElementById('about-link');
+  const infoPanel = document.getElementById('info');
+  const main = document.getElementsByTagName('main')[0];
+  link.onclick = () => {
+    link.classList.toggle('open');
+    if (link.classList.contains('open')) {
+      infoPanel.style.transform = 'translateX(0)';
+      link.style.transform = 'rotate(180deg)';
+    } else {
+      infoPanel.style.transform = 'translateX(535px)';
+      link.style.transform = 'rotate(0)';
+    }
+  }
+
+  if (!link.classList.contains('open')){
+    main.onclick = () => {
+      infoPanel.style.transform = 'translateX(535px)';
+      link.classList.toggle('open');
+      link.style.transform = 'rotate(0)';
+    }
+  }
+</script>

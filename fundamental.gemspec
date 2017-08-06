@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "fundamental"
-  spec.version       = "0.2.4"
+  spec.version       = "0.3.0"
   spec.authors       = ["Theo M Jones"]
   spec.email         = ["theomjones@gmail.com"]
 
   spec.summary       = "A lightweight, minimal Jekyll theme."
-  spec.homepage      = "http://theomjones.com/fundamental"
+  spec.homepage      = "https://github.com/theomjones/fundamental"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
