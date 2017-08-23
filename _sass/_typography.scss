@@ -4,26 +4,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: calc(150% + 2.7vw);
   margin: 30px 0 50px 0;
   color: $accent;
   @media screen and (max-width: $break) {
-    font-size: 3rem;
     margin-top: 5px;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 2.5rem;
   }
 }
 h2 {
-  font-size: 3rem;
+  font-size: calc(130% + 2.3vw);
   margin: 10px 0;
   @media screen and (max-width: $break) {
     font-size: 2.5rem;
   }
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: calc(120% + 1.5vw);
 }
 h4 {
   font-size: 2rem;
@@ -65,10 +61,13 @@ blockquote {
 }
 
 figure {
-  overflow-x: scroll;
-  background: lighten($accent, 35%);
-  padding: 10px 10px 0 10px;
+  overflow-x: auto;
+  background: darken($accent, 45%);
+  padding: 2rem;
+  color: white;
   border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(black, .2);
+  -webkit-overflow-scrolling: touch;
   code {
     display: block;
     background: none;
@@ -102,4 +101,8 @@ ul {
 code {
   background: rgba($accent, .2);
   padding: 0;
+}
+
+pre {
+  margin: 0;
 }

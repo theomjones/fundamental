@@ -4,6 +4,17 @@
 
 Unstable until 1.0
 
+*TODO:*
+- Pagination
+- Categories
+- Better Table styles
+
+### 0.3.2 | 23/08/17
+
+- Minor bug fixes with the new navbar solution. 
+- Went back to one break point only (`600px`), which can be changed in the `_variables.scss` file. You might want to base this value on how many navigation links you have. The more you have, the bigger the breakpoint needs to be. You can leave it if you just have 1-4 items (unless they have huge titles).
+- Viewport based responsive typography for headers.
+- Made code blocks dark with white text.
 
 ### 0.3.1 | 23/08/17
 

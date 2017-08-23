@@ -10,8 +10,8 @@ header {
     margin-bottom: -20px;
     nav {
       overflow-y: hidden;
-      overflow-x: scroll;
-      max-height: 55px;
+      overflow-x: auto;
+      max-height: 50px;
       -webkit-overflow-scrolling: touch;
       border-bottom: 2px solid $tertiary;
       width: 100%;
@@ -27,13 +27,13 @@ header {
     -webkit-overflow-scrolling: touch;
     @media screen and (max-width: $break) {
       margin-right: 0;
-      overflow-x: scroll;
+      overflow-x: auto;
       margin: 10px 0 0 40px;
       display: flex;
-      overflow-x: scroll;
+      overflow-x: auto;
       padding-bottom: 30px;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: $break) {
       margin-left: 10px;
       margin-top: 5px;
     }
@@ -47,7 +47,7 @@ header {
 .title {
   margin: auto;
   margin-left: 50px;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: $break) {
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
