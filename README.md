@@ -4,7 +4,7 @@
 
 See latest changes in [changelog.md])(https://github.com/theomjones/fundamental/blob/master/changelog.md))
 
-Fundamental is a clean, fully responsive, lightweight Jekyll theme for blogging. No frameworks, no JavaScript. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
+Fundamental is a clean, fully responsive, lightweight Jekyll theme for blogging. No frameworks. It uses system fonts, so no external stylesheets are loaded. The CSS is just 2Kb gzipped.
 
 View the [demo here](https://blog.theomjones.com).
 

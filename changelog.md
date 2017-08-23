@@ -4,6 +4,12 @@
 
 Unstable until 1.0
 
+
+### 0.3.1 | 23/08/17
+
+- The bio link button now slides up and down, on mobile/tablet, based on the scroll direction (up it appears, down it disappears.) The whole bio section is still configurable in `config.yml`. Turning it off will remove it completely from the build.
+- On mobile, the navigation menu now scrolls horizontally to better deal with larger menus.
+
 ### 0.3.0 | 06/08/17
 
 *BIG UPDATE*

@@ -7,22 +7,40 @@ header {
   flex-wrap: wrap;
   @media screen and (max-width: $break) {
     justify-content: flex-start;
-    ul {
-      margin: 0 0 0 10px;
+    margin-bottom: -20px;
+    nav {
+      overflow-y: hidden;
+      overflow-x: scroll;
+      max-height: 55px;
+      -webkit-overflow-scrolling: touch;
+      border-bottom: 2px solid $tertiary;
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
     }
   }
   ul {
     list-style: none;
     padding-left: 0;
     margin-right: 50px;
+    -webkit-overflow-scrolling: touch;
+    @media screen and (max-width: $break) {
+      margin-right: 0;
+      overflow-x: scroll;
+      margin: 10px 0 0 40px;
+      display: flex;
+      overflow-x: scroll;
+      padding-bottom: 30px;
+    }
     @media screen and (max-width: 400px) {
       margin-left: 10px;
       margin-top: 5px;
     }
-  }
   li {
     display: inline-block;
     margin: 0 10px;
+    white-space: nowrap; 
   }
 }
 
@@ -32,10 +50,13 @@ header {
   @media screen and (max-width: 400px) {
     margin-left: 20px;
     margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 120%;
   }
   a {
     text-decoration: none;
     color: $textColor;
+  }
   }
 }
 
