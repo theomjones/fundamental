@@ -4,6 +4,7 @@
   <nav>
     <ul>
       {% assign menu_items = site.pages | sort: 'order' %}
+      <li><a href="{% link index.html %}"{% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
       {% for p in menu_items %}
         {% if p.menu == true %}
           <li><a href="{{ p.url | relative_url }}"{% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a></li>

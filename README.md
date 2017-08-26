@@ -18,7 +18,7 @@ View the [demo here](https://blog.theomjones.com).
 - Syntax highlighting
 - Social Buttons
 - Bio Section
-
+- Pagination ***new** (please rename index.md to index.html, see [changelog.md](https://github.com/theomjones/fundamental/blob/master/changelog.md)) for more information.
 
 ![Screen Cap](http://i.imgur.com/jTFtqri.png)
 
@@ -27,7 +27,7 @@ View the [demo here](https://blog.theomjones.com).
 
 ##### Via Direct Download:
 
-[Download](https://github.com/theomjones/fundamental-blank/archive/master.zip) or [clone](https://github.com/theomjones/fundamental-blank/archive) the `fundamental-blank` repository. All you have to do from here is run `bundle install` and then `bundle update`. You're good to go!
+[Download](https://github.com/theomjones/fundamental-blank/archive/master.zip) or [clone](https://github.com/theomjones/fundamental-blank/) the `fundamental-blank` repository. All you have to do from here is run `bundle install` and then `bundle update`. You're good to go!
 
 **Or...**
 
@@ -58,12 +58,11 @@ Or install it yourself as:
 After installing you should have a `config.yml` file in your base directory. Copy the contents of the repo [config.yml](https://github.com/theomjones/fundamental/blob/master/_config.yml) into your own config file. This will supply you with all the required configurations. You can edit them from here.
 
 Jekyll gives you an `index.md` file as your homepage. Copy this into it to get started, the front matter will be explained below:  **!! Something to note**, Fundamental does not currently support categories (they're coming!). The default page Jekyll produces will break breadcrumbs (for now).
+> !! Change the index.md extension to `.html` to allow pagination to work.
 
 	---
 	layout: home
 	title: Home
-	menu: true
-	order: 1
 	---
 
 If you want to add the 'Archive' file you see in the demo. Create an `/archive` directory in your base directory. Then create an `index.md` inside it. Ensure it has the `layout: site-archive`. This layout displays all the posts in the site.
@@ -74,11 +73,14 @@ Fundamemtal uses these plugins. When you have installed the Fundamental gem, run
 1. [jekyll-feed](https://github.com/jekyll/jekyll-feed)
 2. [jekyll-archives](https://github.com/jekyll/jekyll-archives)
 3. [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+3. [jekyll-paginate](https://jekyllrb.com/docs/pagination/)
 
 #### Navigation
 The top navigation loops through the sites pages that have `menu: true` in the front matter. This makes it easy to add new pages to your site. You can also order the pages by setting the value of `order`.
 
 For instance: `order: 2` will place this item second (to the right of the first item).
+
+The homepage is linked in the naviagtion statically by default. It can't be removed.
 
 #### Config
 The usual configuration settings can be found at the top of `config.yml`.

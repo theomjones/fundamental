@@ -5,9 +5,14 @@
 Unstable until 1.0
 
 *TODO:*
-- Pagination
+- ~~Pagination~~
 - Categories
-- Better Table styles
+
+### 0.4.0 | 28/08/17
+
+- **WARNING**: breaking changes. With 0.4.0 comes pagination - however, Jekyll **does not** support pagination on anything other than an `index.hmtl` file. YOU MUST change the extension to `.html` on the main `index.md` file in your base directory. Or omit `pagination: {{value}}` from your config file and pagination will not be used.
+- The break point for the header collapsing is now set using a little algorithm based on how many pages have the `menu: true` in their frontmatter. So no need to worry about how many menu items you have, it'll work it out! Cool huh!
+- Support for Jekyll `3.5.2`
 
 ### 0.3.3 | 26/08/17
 
@@ -61,7 +66,7 @@ e.g.
 - Changed the site-wide archive page to be grouped by year.
 
 
-### 0.2.1 | ??/07/17
+### 0.2.1 | 20/07/17
 - `blog.html` template has been renamed to `home.html` to make installing the theme easier. Jekyll's default `index.md` file uses the home template.
 - IE 10+ layout fixes where footer floated to the top.
 - Navigation spacing on small screens (<400px).

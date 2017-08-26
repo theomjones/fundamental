@@ -6,9 +6,12 @@ layout: default
 <div class="flex">
   {% include tag-cloud.html %}
   <!-- Post Loop -->
-  <ul class="post-loop">
-    {% for p in site.posts %}
-      {% include item.html %}
-    {% endfor %}
-  </ul>
+  <div>
+    <ul class="post-loop">
+      {% for p in paginator.posts %}
+        {% include item.html %}
+      {% endfor %}
+    </ul>
+    {% include pagination.html %}
+  </div>
 </div>

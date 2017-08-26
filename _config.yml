@@ -58,6 +58,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
+  - jekyll-paginate
 
 # Compress Sass for production.
 sass:
@@ -97,3 +98,5 @@ jekyll-archives:
     day: '/:year/:month/:day/'
     tag: '/tag/:name/'
     category: '/category/:name/'
+
+paginate: 20

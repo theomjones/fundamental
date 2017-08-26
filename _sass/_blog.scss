@@ -23,3 +23,25 @@
     padding-bottom: 0;
   }
 }
+
+.pagination {
+  margin-top: auto;
+  max-width: 100vw;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  a, span {
+    padding: 5px 10px;
+  }
+  span:first-child {
+    padding-left: 0;
+  }
+  span:last-child {
+    padding-right: 0;
+  }
+}
+
+.paginator-active {
+  background: $accent;
+  color: $base;
+}
