@@ -14,6 +14,8 @@ Unstable until 1.0
 - The break point for the header collapsing is now set using a little algorithm based on how many pages have the `menu: true` in their frontmatter. So no need to worry about how many menu items you have, it'll work it out! Cool huh!
 - Support for Jekyll `3.5.2`
 
+- Make sure you add jekyll `3.5.2` to your gemfile or bundler won't be able to update the theme. 
+
 ### 0.3.3 | 26/08/17
 
 - The post headers were far to big on the latest release. Fixed.
