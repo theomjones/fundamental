@@ -9,6 +9,10 @@ Unstable until 1.0
 - Categories
 - Better Table styles
 
+### 0.3.3 | 26/08/17
+
+- The post headers were far to big on the latest release. Fixed.
+
 ### 0.3.2 | 23/08/17
 
 - Minor bug fixes with the new navbar solution. 
