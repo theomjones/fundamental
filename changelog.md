@@ -8,6 +8,10 @@ Unstable until 1.0
 - ~~Pagination~~
 - Categories
 
+### ~~0.4.1~~ 0.4.2 | 28/08/17
+
+- Fixed a problem with the header media query not affecting the title *again
+
 ### 0.4.0 | 28/08/17
 
 - **WARNING**: breaking changes. With 0.4.0 comes pagination - however, Jekyll **does not** support pagination on anything other than an `index.hmtl` file. YOU MUST change the extension to `.html` on the main `index.md` file in your base directory. Or omit `pagination: {{value}}` from your config file and pagination will not be used.

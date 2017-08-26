@@ -10,10 +10,20 @@ header {
     padding-left: 0;
     margin-right: 50px;
     -webkit-overflow-scrolling: touch;
+  }
   li {
     display: inline-block;
     margin: 0 10px;
-    white-space: nowrap; 
+    white-space: nowrap;
+  }
+  .active {
+    position: relative;
+    &:before {
+      content: '‥';
+      position: absolute;
+      bottom: -15px;
+      left: 45%;
+    }
   }
 }
 
@@ -23,16 +33,5 @@ header {
   a {
     text-decoration: none;
     color: $textColor;
-  }
-  }
-}
-
-.active {
-  position: relative;
-  &:before {
-    content: '‥';
-    position: absolute;
-    bottom: -15px;
-    left: 45%;
   }
 }
