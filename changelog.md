@@ -8,6 +8,11 @@ Unstable until 1.0
 - ~~Pagination~~
 - Categories
 
+### 0.4.3 | 29/08/17
+
+- Moved the dynamic media query into scss, didn't realise you could use liquid in scss!
+- Changed the syntax-highlight theme to work better with the darker background.
+
 ### ~~0.4.1~~ 0.4.2 | 28/08/17
 
 - Fixed a problem with the header media query not affecting the title *again
