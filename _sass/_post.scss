@@ -6,8 +6,15 @@
   justify-content: space-between;
   a {
     margin: 10px 0;
-    font-weight: 800;
+    text-decoration: none;
     font-size: 1rem;
+    border: solid 1px $accent;
+    border-radius: 3px;
+    padding: 10px 20px;
+    &:hover {
+      background: $accent;
+      color: $base;
+    }
   }
 }
 

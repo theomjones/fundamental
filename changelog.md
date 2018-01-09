@@ -8,6 +8,16 @@ Unstable until 1.0
 - ~~Pagination~~
 - Categories
 
+### 0.4.5 | 04/01/18
+
+- Removed `:focus { outline: none }` from fundamentals file which is bad for accessibility, thanks [httpsterio](https://github.com/httpsterio)
+
+### 0.4.4 | 30/08/17
+
+- Small typographic changes
+- Changed the previous/next article to resemble the tag cloud links more.
+
+
 ### 0.4.3 | 29/08/17
 
 - Moved the dynamic media query into scss, didn't realise you could use liquid in scss!

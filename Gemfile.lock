@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fundamental (0.4.3)
+    fundamental (0.4.4)
       jekyll (~> 3.5.2)
       jekyll-archives (~> 2.1.1)
       jekyll-paginate

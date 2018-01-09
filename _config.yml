@@ -48,6 +48,7 @@ socialBtnsColor: '#4845DF'
 
 bio:
   enabled: true
+  animate: true
   heading: Your Bio Heading
   subheading: 'Your subheading'
   img_url: false # 'your-img-url'

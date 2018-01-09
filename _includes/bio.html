@@ -49,6 +49,10 @@ function animateBioLink() {
   }
 }
 
-animateBioLink();
- 
+{% if site.bio.scrollAnimate %}
+
+    animateBioLink();
+
+{% endif %}
+
 </script>

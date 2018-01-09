@@ -95,6 +95,12 @@ ul {
   }
 }
 
+article {
+  ul, ol {
+    line-height: 1.9;
+  }
+}
+
 code {
   background: rgba($accent, .2);
   padding: 0;
@@ -102,4 +108,10 @@ code {
 
 pre {
   margin: 0;
+}
+
+sup {
+  a {
+    text-decoration: none;
+  }
 }
